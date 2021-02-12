@@ -9,16 +9,16 @@ console.log(nextBtn);
 console.log(container);
 console.log(images);
 
-let i = 0;
+// let i = 0;
 
 nextBtn.addEventListener('click', ()=>{
-  for(i=0; i < images.length; i++) {
+  for(i = 0; i < images.length; i++) {
     container.classList.add('show');
   };
 });
 
 prevBtn.addEventListener('click', ()=>{
-  for(i=0; i < images.length; i++) {
-    container.classList.add('show');
+  for(i = 0; i < images.length; i++) {
+    container.classList.remove('show');
   };
 });
