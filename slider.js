@@ -8,16 +8,16 @@ console.log(nextBtn);
 console.log(container);
 console.log(images);
 
-let i = 0;
+let counter = 0;
 
 nextBtn.addEventListener('click', ()=>{
-  i++;
-  images[i].classList.add('show');
-  console.log(i);
+  counter++;
+  if(counter >= 3) return;
+  console.log(counter);
 });
 
 prevBtn.addEventListener('click', ()=>{
-  i--;
-  if(i <= -3) return;
-  console.log(i);
+  counter--;
+  if(counter <= -3) return;
+  console.log(counter);
 });
