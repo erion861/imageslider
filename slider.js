@@ -13,12 +13,12 @@ let i = 0;
 
 nextBtn.addEventListener('click', ()=>{
   for(i=0; i < images.length; i++) {
-    
+    container.classList.add('show');
   };
 });
 
 prevBtn.addEventListener('click', ()=>{
-  counter--;
-  if(counter <= -3) return;
-  console.log(counter);
+  for(i=0; i < images.length; i++) {
+    container.classList.add('show');
+  };
 });
